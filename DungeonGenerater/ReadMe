@@ -3,10 +3,7 @@
 AsyncOperation 는 비동기 scene 호출 방식으로 사용했다
 SceneManager 로 scene 호출 시 모든 정보를 메모리로 가져오기까지 다른 작업을 못해 일명 '렉'이 발생되며 작업 처리 지연현상이
 생기기 때문에 유니티에서 제공하는 AsyncOperation 를 사용해봤습니다.
-
-|AsyncOperation|변수|
-|:------|---|
-|bool allowSceneActivation|장면이 준비되는 즉시 장면을 활성화시킬 것인지 허용 여부|
-|bool isDone|해당 동작이 준비되었는지의 여부|
-|float progress|작업의 진행 정도를 0과 1사이의 값으로 확인 가능|
-
+변수로는 아래처럼 있다 한다.
+ bool allowSceneActivation  장면이 준비되는 즉시 장면을 활성화시킬 것인지 허용 여부 
+ bool isDone                해당 동작이 준비되었는지의 여부                       
+ float progress             작업의 진행 정도를 0과 1사이의 값으로 확인 가능        
